@@ -44,11 +44,6 @@ lof_scores = local_outlier_factor(data, k=5)
 threshold = 2
 outliers = np.where(lof_scores > threshold)[0]
 
-# # 可视化结果
-# plt.scatter(data[:, 0], data[:, 1], color='blue', label='Normal data')
-# plt.scatter(data[outliers, 0], data[outliers, 1], color='red', label='Detected outliers')
-# plt.legend()
-# plt.show()
 # 可视化结果
 plt.figure(figsize=(10, 8))
 plt.scatter(data[:, 0], data[:, 1], color='blue', label='Normal data')
